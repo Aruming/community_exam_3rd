@@ -1,8 +1,6 @@
 package com.ll.exam;
 
 import com.ll.exam.annotation.Controller;
-import com.ll.exam.controller.ArticleController;
-import com.ll.exam.controller.HomeController;
 import org.reflections.Reflections;
 
 import java.util.ArrayList;
