@@ -11,7 +11,7 @@ public class DispatchServlet extends HttpServlet {
     //조회
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+        ControllerManager.runAction(req, resp);
     }
 
     //등록

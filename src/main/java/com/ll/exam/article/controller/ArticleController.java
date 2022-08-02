@@ -12,15 +12,14 @@ import com.ll.exam.article.service.ArticleService;
 public class ArticleController {
     @Autowired
     private ArticleService articleService;
-    @GetMapping("/usr/article/list") // /usr/article/list/free 와 같이 관련된 요청을 처리하는 함수
-
+    @GetMapping("/usr/article/{boardCode}") // /usr/article/list/free 와 같이 관련된 요청을 처리하는 함수
     //showList 는 Get /usr/article/list 으로 요청이 왔을 때 실행 되어야 하는 함수
     public void showList() {
 
     }
 
-    public ArticleService getArticleServiceForTest() {
-        articleService = Container.getObj(ArticleService.class);
-        return articleService;
+    @GetMapping("/usr/article/detail/{boardCode}")
+    public void showDetail() {
+
     }
 }
