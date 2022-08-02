@@ -20,6 +20,7 @@ public class ArticleController {
     }
 
     public ArticleService getArticleServiceForTest() {
+        articleService = Container.getObj(ArticleService.class);
         return articleService;
     }
 }
